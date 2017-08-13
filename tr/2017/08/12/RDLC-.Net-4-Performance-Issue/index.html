@@ -7,12 +7,12 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="Content-Language" content="tr">
-<link rel="alternate" i18n="en" href=" http://localhost:4000/"/>
-<link rel="alternate" i18n="tr" href="http://localhost:4000/tr/"/>
+<link rel="alternate" i18n="en" href=" http://localhost:4000/2017/08/12/RDLC-.Net-4-Performance-Issue/"/>
+<link rel="alternate" i18n="tr" href="http://localhost:4000/tr/2017/08/12/RDLC-.Net-4-Performance-Issue/"/>
 
   <title>
     
-      M.Fatih Blog &middot; Personel Software Blog
+      RDLC .Net 4 Local Mode Performans Sorunu &middot; M.Fatih Blog
     
   </title>
 
@@ -80,9 +80,9 @@
     <p>&copy; 2017. All rights reserved.</p>
 <p>
   
-<a  href=" / ">en</a> |
+<a  href=" /2017/08/12/RDLC-.Net-4-Performance-Issue/ ">en</a> |
   
-<a style="font-weight: bold;" href=" /tr/ ">tr</a> |
+<a style="font-weight: bold;" href=" /tr/2017/08/12/RDLC-.Net-4-Performance-Issue/ ">tr</a> |
   
 </p>
   </div>
@@ -90,18 +90,10 @@
 
 
     <div class="content container">
-      <div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/tr/2017/08/12/RDLC-.Net-4-Performance-Issue/">
-        RDLC .Net 4 Local Mode Performans Sorunu
-      </a>
-    </h1>
-
-    <span class="post-date">12 Aug 2017</span>
-
-    <p>Sıkıntıya sebep olan kısmı açıklayacak olursak; bir rapor, .net 4 ile ReporViewer mevcut AppDomain yerine Sandbox AppDomain yapısı içerisinde işletilmektedir. Bu yenilik ile birlikte “Expression Evaluation” ifadeleri “Local Mode” mod ile çalıştırıldığında performans sorunu ortaya çıkmaktadır. Bu soruna çözüm olarak</p>
+      <div class="post">
+  <h1 class="post-title">RDLC .Net 4 Local Mode Performans Sorunu</h1>
+  <span class="post-date">12 Aug 2017</span>
+  <p>Sıkıntıya sebep olan kısmı açıklayacak olursak; bir rapor, .net 4 ile ReporViewer mevcut AppDomain yerine Sandbox AppDomain yapısı içerisinde işletilmektedir. Bu yenilik ile birlikte “Expression Evaluation” ifadeleri “Local Mode” mod ile çalıştırıldığında performans sorunu ortaya çıkmaktadır. Bu soruna çözüm olarak</p>
 
 <ol>
   <li>
@@ -144,17 +136,13 @@
 <figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="kt">byte</span> <span class="p">[]</span> <span class="n">data</span> <span class="p">=</span> <span class="n">repHelper</span><span class="p">.</span><span class="nf">RenderReport</span><span class="p">(</span><span class="n">reportName</span><span class="p">,</span> <span class="n">reportDataSource</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">dataTableToXmlStr</span><span class="p">,</span> <span class="n">dataTable</span><span class="p">.</span><span class="n">TableName</span><span class="p">,</span> <span class="n">dicParameters</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">deviceInfo</span><span class="p">);</span></code></pre></figure>
 
 
-  </div>
-  
 </div>
 
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+  </ul>
 </div>
 
     </div>
